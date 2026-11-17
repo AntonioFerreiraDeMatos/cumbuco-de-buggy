@@ -12,3 +12,6 @@
 Thumbs.db
 __pycache__/
 .vscode/
+
+# Pasta temporária de publicação
+/dist/
