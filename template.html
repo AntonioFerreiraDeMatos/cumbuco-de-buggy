@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="{{HTML_LANG}}" data-lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{attr:meta.desc}}">
+<meta name="keywords" content="{{attr:meta.keywords}}">
+<meta name="author" content="Igor Vasconcelos">
+<meta name="theme-color" content="#0ea5e9">
+<link rel="canonical" href="{{CANONICAL}}">
+{{HREFLANG}}
+<meta property="og:type" content="website">
+<meta property="og:locale" content="{{OG_LOCALE}}">
+<meta property="og:title" content="{{attr:meta.title}}">
+<meta property="og:description" content="{{attr:meta.desc}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:image" content="{{SITE}}/assets/img/logo-grande.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="../assets/img/coqueiros-por-do-sol-buggy.jpg">
+<link rel="stylesheet" href="../assets/css/style.css?v=12">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TouristTrip","name":"{{attr:t1.title}}","description":"{{attr:meta.desc}}","touristType":"Leisure","inLanguage":"{{HTML_LANG}}","url":"{{CANONICAL}}","image":"{{SITE}}/assets/img/dunas-buggy-casal.jpg","provider":{"@type":"LocalBusiness","name":"Igor Vasconcelos — Buggy Cumbuco","telephone":"+{{WA}}","url":"{{SITE}}/","logo":"{{SITE}}/assets/img/logo-grande.jpg","areaServed":["Cumbuco","Caucaia","Fortaleza","Ceará"],"foundingDate":"2016"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="a11y.skip">{{a11y.skip}}</a>
+
+<header class="header" id="top">
+  <div class="container header-in">
+    <a href="#top" class="logo" aria-label="Igor Vasconcelos — Buggy Cumbuco">
+      <img class="logo-img" src="../assets/img/logo.jpg" alt="Passeio de Buggy Cumbuco Ceará" width="360" height="240">
+      <span class="logo-txt"><strong>Cumbuco de Buggy</strong><small>Passeio de Buggy <b>em Cumbuco · Ceará</b></small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Menu">
+      <a href="#top" data-i18n="nav.home">{{nav.home}}</a>
+      <a href="#sobre" data-i18n="nav.about">{{nav.about}}</a>
+      <a href="#passeios" data-i18n="nav.tours">{{nav.tours}}</a>
+      <a href="#busca" data-i18n="nav.pickup">{{nav.pickup}}</a>
+      <a href="#galeria" data-i18n="nav.gallery">{{nav.gallery}}</a>
+      <a href="#video" data-i18n="nav.video">{{nav.video}}</a>
+      <a href="#avaliacoes" data-i18n="nav.reviews">{{nav.reviews}}</a>
+    </nav>
+    <div class="lang" role="group" aria-label="{{attr:a11y.lang}}" data-i18n-aria="a11y.lang">
+      <a href="../pt-br/" hreflang="pt-BR" data-lang="pt" aria-current="false"><svg class="flag" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#009c3b"/><path d="M14 2.5 25.5 10 14 17.5 2.5 10z" fill="#ffdf00"/><circle cx="14" cy="10" r="4.4" fill="#002776"/><path d="M9.8 9.2c2.8-.5 5.8 0 8.3 1.6" stroke="#fff" stroke-width=".8" fill="none"/></svg> PT</a>
+      <a href="../en/" hreflang="en" data-lang="en" aria-current="false"><svg class="flag" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#fff"/><path d="M0 0h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28v1.54H0zm0 3.08h28V20H0z" fill="#b22234"/><rect width="12" height="10.8" fill="#3c3b6e"/><g fill="#fff"><circle cx="2" cy="2" r=".6"/><circle cx="5" cy="2" r=".6"/><circle cx="8" cy="2" r=".6"/><circle cx="3.5" cy="4.4" r=".6"/><circle cx="6.5" cy="4.4" r=".6"/><circle cx="9.5" cy="4.4" r=".6"/><circle cx="2" cy="6.8" r=".6"/><circle cx="5" cy="6.8" r=".6"/><circle cx="8" cy="6.8" r=".6"/><circle cx="3.5" cy="9.2" r=".6"/><circle cx="6.5" cy="9.2" r=".6"/><circle cx="9.5" cy="9.2" r=".6"/></g></svg> EN</a>
+      <a href="../es/" hreflang="es" data-lang="es" aria-current="false"><svg class="flag" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#aa151b"/><rect y="5" width="28" height="10" fill="#f1bf00"/></svg> ES</a>
+    </div>
+    <a class="btn btn-sm btn-wa header-cta" href="{{wa:wa.info}}" data-wa="wa.info" target="_blank" rel="noopener" data-i18n="nav.cta">{{nav.cta}}</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="{{attr:a11y.menu}}" data-i18n-aria="a11y.menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" data-depth="0.15"><img src="../assets/img/coqueiros-por-do-sol-buggy.jpg" alt="" fetchpriority="high"></div>
+  <div class="hero-shade"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <p class="kicker" data-i18n="hero.kicker">{{hero.kicker}}</p>
+      <h1 data-i18n="hero.title">{{hero.title}}</h1>
+      <div class="hero-intro">
+        <p class="intro-hi" data-i18n="about.title">{{about.title}}</p>
+        <p class="about-lead" data-i18n="about.p1">{{about.p1}}</p>
+        <blockquote class="about-quote" data-i18n="about.quote">{{about.quote}}</blockquote>
+        <p data-i18n="about.p2">{{about.p2}}</p>
+        <ul class="about-ideas">
+          <li><svg class="ico"><use href="#i-pin"/></svg><span data-i18n="about.q1">{{about.q1}}</span></li>
+          <li><svg class="ico"><use href="#i-route"/></svg><span data-i18n="about.q2">{{about.q2}}</span></li>
+          <li><svg class="ico"><use href="#i-clock"/></svg><span data-i18n="about.q3">{{about.q3}}</span></li>
+          <li><svg class="ico"><use href="#i-star"/></svg><span data-i18n="about.q4">{{about.q4}}</span></li>
+        </ul>
+        <p data-i18n="about.p3">{{about.p3}}</p>
+        <p data-i18n="about.p4">{{about.p4}}</p>
+        <div class="about-sign">
+          <span><i aria-hidden="true">🌴</i><em data-i18n="about.s1">{{about.s1}}</em></span>
+          <span><i aria-hidden="true">🏜️</i><em data-i18n="about.s2">{{about.s2}}</em></span>
+        </div>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-wa btn-lg" href="{{wa:wa.info}}" data-wa="wa.info" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg><span data-i18n="hero.cta">{{hero.cta}}</span></a>
+        <a class="btn btn-ghost btn-lg" href="#passeios" data-i18n="hero.cta2">{{hero.cta2}}</a>
+      </div>
+      <ul class="hero-badges">
+        <li><svg class="ico"><use href="#i-star"/></svg><span data-i18n="hero.b1">{{hero.b1}}</span></li>
+        <li><svg class="ico"><use href="#i-shield"/></svg><span data-i18n="hero.b2">{{hero.b2}}</span></li>
+        <li><svg class="ico"><use href="#i-pin"/></svg><span data-i18n="hero.b3">{{hero.b3}}</span></li>
+      </ul>
+    </div>
+    <div class="hero-stack">
+      <div class="stack3d" id="stack">
+        <img class="p1" src="../assets/img/coqueiros-por-do-sol-buggy.jpg" alt="Buggy entre coqueiros no pôr do sol em Cumbuco">
+        <img class="p2" src="../assets/img/familia-por-do-sol.jpg" alt="Família no buggy ao pôr do sol em Cumbuco">
+        <img class="p0" src="../assets/img/dunas-mirante.jpg" alt="Turista em cima do buggy nas dunas de Cumbuco">
+      </div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60c240 50 480 50 720 20s480-60 720-10v50H0z"/></svg>
+</section>
+
+<!-- CREDIBILIDADE -->
+<section class="cred" aria-labelledby="cred-t">
+  <div class="container">
+    <h2 id="cred-t" class="sr-only" data-i18n="cred.title">{{cred.title}}</h2>
+    <div class="cred-grid">
+      <article class="cred-card tilt reveal"><div class="cred-ico"><svg class="ico"><use href="#i-star"/></svg></div><h3 data-i18n="cred.1.t">{{cred.1.t}}</h3><p data-i18n="cred.1.d">{{cred.1.d}}</p></article>
+      <article class="cred-card tilt reveal"><div class="cred-ico"><svg class="ico"><use href="#i-badge"/></svg></div><h3 data-i18n="cred.2.t">{{cred.2.t}}</h3><p data-i18n="cred.2.d">{{cred.2.d}}</p></article>
+      <article class="cred-card tilt reveal"><div class="cred-ico"><svg class="ico"><use href="#i-shield"/></svg></div><h3 data-i18n="cred.3.t">{{cred.3.t}}</h3><p data-i18n="cred.3.d">{{cred.3.d}}</p></article>
+      <article class="cred-card tilt reveal cred-sound"><div class="cred-ico"><svg class="ico"><use href="#i-music"/></svg></div><h3 data-i18n="cred.4.t">{{cred.4.t}}</h3><p data-i18n="cred.4.d">{{cred.4.d}}</p><div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="section about" id="sobre">
+  <div class="container about-grid">
+    <div class="about-side side-l" aria-hidden="true">
+      <figure class="side-ph reveal"><img src="../assets/img/thumb/lagoa-por-do-sol.jpg" alt="" loading="lazy"></figure>
+      <figure class="side-ph reveal"><img src="../assets/img/thumb/casal-dunas-olhar.jpg" alt="" loading="lazy"></figure>
+    </div>
+    <div class="about-side side-r" aria-hidden="true">
+      <figure class="side-ph reveal"><img src="../assets/img/thumb/buggy-som-relax.jpg" alt="" loading="lazy"></figure>
+      <figure class="side-ph reveal"><img src="../assets/img/thumb/familia-areia.jpg" alt="" loading="lazy"></figure>
+    </div>
+    <div class="about-media reveal">
+      <div class="frame3d tilt">
+        <img src="../assets/img/buggy-frente.jpg?v=2" alt="{{attr:about.alt}}" data-i18n-alt="about.alt" loading="lazy" width="960" height="1280">
+        
+      </div>
+      <img class="about-float" src="../assets/img/thumb/dunas-pose.jpg" alt="" aria-hidden="true" loading="lazy">
+    </div>
+    <div class="about-copy reveal">
+      <p class="pill"><svg class="ico"><use href="#i-camera"/></svg><span data-i18n="about.highlight">{{about.highlight}}</span></p>
+      <a class="btn btn-wa" href="{{wa:wa.default}}" data-wa="wa.default" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg><span data-i18n="foot.wa">{{foot.wa}}</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- PASSEIOS -->
+<section class="section tours" id="passeios">
+  <div class="container">
+    <header class="sec-head reveal">
+      <p class="kicker" data-i18n="tours.kicker">{{tours.kicker}}</p>
+      <h2 data-i18n="tours.title">{{tours.title}}</h2>
+      <p class="sec-sub" data-i18n="tours.sub">{{tours.sub}}</p>
+    </header>
+    <div class="tour-grid">
+      <article class="tour-card reveal">
+        <div class="tour-img"><img src="../assets/img/dunas-buggy-casal.jpg" alt="{{attr:t1.alt}}" data-i18n-alt="t1.alt" loading="lazy" width="960" height="1280"><span class="tag" data-i18n="t1.tag2">{{t1.tag2}}</span></div>
+        <div class="tour-body">
+          <h3 data-i18n="t1.title">{{t1.title}}</h3>
+          <p data-i18n="t1.desc2">{{t1.desc2}}</p>
+          <dl class="facts"><div><dt><svg class="ico"><use href="#i-clock"/></svg><span data-i18n="t1.time.t">{{t1.time.t}}</span></dt><dd><span data-i18n="t1.time2">{{t1.time2}}</span> · <span data-i18n="t1.dist">{{t1.dist}}</span></dd></div><div><dt><svg class="ico"><use href="#i-users"/></svg><span data-i18n="t1.cap.t">{{t1.cap.t}}</span></dt><dd><span data-i18n="t1.cap">{{t1.cap}}</span></dd></div></dl>
+          <details class="itin"><summary><span data-i18n="tour.more">{{tour.more}}</span></summary><h4 data-i18n="tour.stops">{{tour.stops}}</h4><p class="itin-intro" data-i18n="tour.intro">{{tour.intro}}</p><ol class="stops"><li><b data-i18n="st.parna.t">{{st.parna.t}}</b><span data-i18n="st.parna.d">{{st.parna.d}}</span></li><li><b data-i18n="st.dunas.t">{{st.dunas.t}}</b><span data-i18n="st.dunas.d">{{st.dunas.d}}</span></li><li><b data-i18n="st.banana.t">{{st.banana.t}}</b><span data-i18n="st.banana.d">{{st.banana.d}}</span></li><li><b data-i18n="st.dunas2.t">{{st.dunas2.t}}</b><span data-i18n="st.dunas2.d">{{st.dunas2.d}}</span></li><li><b data-i18n="st.cauipe.t">{{st.cauipe.t}}</b><span data-i18n="st.cauipe.d">{{st.cauipe.d}}</span></li><li><b data-i18n="st.ret.t">{{st.ret.t}}</b><span data-i18n="st.ret.d">{{st.ret.d}}</span></li></ol><p class="t-note" data-i18n="tour.note">{{tour.note}}</p></details>
+          <a class="btn btn-wa btn-block" href="{{wa:wa.t1}}" data-wa="wa.t1" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg><span data-i18n="tours.btn">{{tours.btn}}</span></a>
+        </div>
+      </article>
+      <article class="tour-card reveal">
+        <div class="tour-img"><img src="../assets/img/passeio-tradicional.jpg" alt="{{attr:t2.alt}}" data-i18n-alt="t2.alt" loading="lazy" width="960" height="1280"><span class="tag tag-alt" data-i18n="t2.tag2">{{t2.tag2}}</span></div>
+        <div class="tour-body">
+          <h3 data-i18n="t2.title">{{t2.title}}</h3>
+          <p data-i18n="t2.desc2">{{t2.desc2}}</p>
+          <dl class="facts"><div><dt><svg class="ico"><use href="#i-clock"/></svg><span data-i18n="t1.time.t">{{t1.time.t}}</span></dt><dd><span data-i18n="t2.time2">{{t2.time2}}</span></dd></div><div><dt><svg class="ico"><use href="#i-users"/></svg><span data-i18n="t1.cap.t">{{t1.cap.t}}</span></dt><dd><span data-i18n="t1.cap">{{t1.cap}}</span></dd></div></dl>
+          <details class="itin"><summary><span data-i18n="tour.more">{{tour.more}}</span></summary><h4 data-i18n="tour.stops">{{tour.stops}}</h4><p class="itin-intro" data-i18n="tour.intro">{{tour.intro}}</p><ol class="stops"><li><b data-i18n="st.parna.t">{{st.parna.t}}</b><span data-i18n="st.parna.d">{{st.parna.d}}</span></li><li><b data-i18n="st.dunas.t">{{st.dunas.t}}</b><span data-i18n="st.dunas.d">{{st.dunas.d}}</span></li><li><b data-i18n="st.banana.t">{{st.banana.t}}</b><span data-i18n="st.banana.d">{{st.banana.d}}</span></li><li><b data-i18n="st.back.t">{{st.back.t}}</b><span data-i18n="st.back.d">{{st.back.d}}</span></li></ol><p class="t-note" data-i18n="tour.note">{{tour.note}}</p></details>
+          <a class="btn btn-wa btn-block" href="{{wa:wa.t2}}" data-wa="wa.t2" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg><span data-i18n="tours.btn">{{tours.btn}}</span></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="optional reveal">
+      <h3 data-i18n="opt.title">{{opt.title}}</h3>
+      <p data-i18n="opt.sub">{{opt.sub}}</p>
+      <ul class="op-grid">
+        <li class="op"><div class="op-pic"><img src="../assets/img/brincadeiras/skibunda.jpg?v=2" alt="" width="1000" height="1000" loading="lazy"></div><b data-i18n="opt.9">{{opt.9}}</b><span class="op-price" data-i18n="op.skibunda.p">{{op.skibunda.p}}</span><small data-i18n="op.skibunda.d">{{op.skibunda.d}}</small></li>
+        <li class="op"><div class="op-pic"><img src="../assets/img/brincadeiras/toboagua.jpg?v=2" alt="" width="1000" height="1000" loading="lazy"></div><b data-i18n="opt.2">{{opt.2}}</b><span class="op-price" data-i18n="op.toboagua.p">{{op.toboagua.p}}</span><small data-i18n="op.toboagua.d">{{op.toboagua.d}}</small></li>
+        <li class="op"><div class="op-pic"><img src="../assets/img/brincadeiras/tirolesa.jpg?v=2" alt="" width="1000" height="1000" loading="lazy"></div><b data-i18n="opt.1">{{opt.1}}</b><span class="op-price" data-i18n="op.tirolesa.p">{{op.tirolesa.p}}</span><small data-i18n="op.tirolesa.d">{{op.tirolesa.d}}</small></li>
+        <li class="op"><div class="op-pic"><img src="../assets/img/brincadeiras/banana.jpg?v=2" alt="" width="1000" height="1000" loading="lazy"></div><b data-i18n="opt.5">{{opt.5}}</b><span class="op-price" data-i18n="op.banana.p">{{op.banana.p}}</span><small data-i18n="op.banana.d">{{op.banana.d}}</small></li>
+        <li class="op"><div class="op-pic"><img src="../assets/img/brincadeiras/jetski.jpg?v=2" alt="" width="1000" height="1000" loading="lazy"></div><b data-i18n="opt.7">{{opt.7}}</b><span class="op-price" data-i18n="op.jetski.p">{{op.jetski.p}}</span><small data-i18n="op.jetski.d">{{op.jetski.d}}</small></li>
+        <li class="op"><div class="op-pic"><img src="../assets/img/brincadeiras/lancha.jpg?v=2" alt="" width="1000" height="1000" loading="lazy"></div><b data-i18n="opt.8">{{opt.8}}</b><span class="op-price" data-i18n="op.lancha.p">{{op.lancha.p}}</span><small data-i18n="op.lancha.d">{{op.lancha.d}}</small></li>
+        <li class="op"><div class="op-pic"><img src="../assets/img/brincadeiras/catapulta.jpg?v=2" alt="" width="1000" height="1000" loading="lazy"></div><b data-i18n="opt.3">{{opt.3}}</b><span class="op-price" data-i18n="op.catapulta.p">{{op.catapulta.p}}</span><small data-i18n="op.catapulta.d">{{op.catapulta.d}}</small></li>
+        <li class="op"><div class="op-pic"><img src="../assets/img/brincadeiras/boia.jpg?v=2" alt="" width="1000" height="1000" loading="lazy"></div><b data-i18n="opt.10">{{opt.10}}</b><span class="op-price" data-i18n="op.boia.p">{{op.boia.p}}</span><small data-i18n="op.boia.d">{{op.boia.d}}</small></li>
+        <li class="op"><div class="op-pic"><img src="../assets/img/brincadeiras/futsabao.jpg?v=2" alt="" width="1000" height="1000" loading="lazy"></div><b data-i18n="opt.11">{{opt.11}}</b><span class="op-price" data-i18n="op.futsabao.p">{{op.futsabao.p}}</span><small data-i18n="op.futsabao.d">{{op.futsabao.d}}</small></li>
+      </ul>
+      <small data-i18n="opt.note">{{opt.note}}</small>
+      <small class="op-card" data-i18n="op.card">{{op.card}}</small>
+    </div>
+  </div>
+</section>
+
+<!-- FAIXA COMERCIAL -->
+<section class="band">
+  <div class="band-bg" data-depth="0.1"><img src="../assets/img/por-do-sol-grupo.jpg" alt="" loading="lazy"></div>
+  <div class="container band-in reveal">
+    <h2 data-i18n="band.title">{{band.title}}</h2>
+    <p data-i18n="band.text">{{band.text}}</p>
+    <a class="btn btn-wa btn-lg" href="{{wa:wa.prices}}" data-wa="wa.prices" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg><span data-i18n="band.btn">{{band.btn}}</span></a>
+  </div>
+</section>
+
+<!-- BUSCA -->
+<section class="section pickup" id="busca">
+  <div class="container pickup-grid">
+    <div class="pickup-copy reveal">
+      <p class="kicker" data-i18n="pick.kicker">{{pick.kicker}}</p>
+      <h2 data-i18n="pick.title">{{pick.title}}</h2>
+      <p data-i18n="pick.text">{{pick.text}}</p>
+      <p class="pick-slogan"><svg class="ico"><use href="#i-clock"/></svg><span data-i18n="pick.slogan">{{pick.slogan}}</span></p>
+      <form class="pick-form" id="pickForm" novalidate>
+        <label><span data-i18n="pick.name">{{pick.name}}</span><input id="f-name" name="name" autocomplete="name" required></label>
+        <div class="row2">
+          <label><span data-i18n="pick.date">{{pick.date}}</span><input id="f-date" type="date" name="date"></label>
+          <label><span data-i18n="pick.time">{{pick.time}}</span><input id="f-time" type="time" name="time" step="900"></label>
+        </div>
+        <label><span data-i18n="pick.people">{{pick.people}}</span><input id="f-people" type="number" name="people" min="1" max="20" inputmode="numeric"></label>
+        <label><span data-i18n="pick.place">{{pick.place}}</span><input id="f-place" name="place" placeholder="{{attr:pick.placeholder}}" data-i18n-ph="pick.placeholder"></label>
+        <label><span data-i18n="pick.tour">{{pick.tour}}</span>
+          <select id="f-tour" name="tour"><option value="t1.title" data-i18n="t1.title">{{t1.title}}</option><option value="t2.title" data-i18n="t2.title">{{t2.title}}</option></select>
+        </label>
+        <a class="btn btn-wa btn-block" id="pickBtn" href="{{wa:wa.pick}}" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg><span data-i18n="pick.btn">{{pick.btn}}</span></a>
+      </form>
+    </div>
+    <div class="pickup-media reveal">
+      <div class="frame3d tilt"><img src="../assets/img/kitesurf-buggy.jpg" alt="{{attr:pick.alt}}" data-i18n-alt="pick.alt" loading="lazy" width="960" height="1280"></div>
+      <span class="pin-badge"><svg class="ico"><use href="#i-pin"/></svg><span data-i18n="hero.b3">{{hero.b3}}</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="section gallery" id="galeria">
+  <div class="container">
+    <header class="sec-head reveal">
+      <p class="kicker" data-i18n="gal.kicker">{{gal.kicker}}</p>
+      <h2 data-i18n="gal.title">{{gal.title}}</h2>
+    </header>
+    <div class="filters" role="group">
+      <button class="active" data-filter="all" data-i18n="gal.f.all">{{gal.f.all}}</button>
+      <button data-filter="dunas" data-i18n="gal.f.dunas">{{gal.f.dunas}}</button>
+      <button data-filter="sunset" data-i18n="gal.f.sunset">{{gal.f.sunset}}</button>
+      <button data-filter="couples" data-i18n="gal.f.couples">{{gal.f.couples}}</button>
+      <button data-filter="groups" data-i18n="gal.f.groups">{{gal.f.groups}}</button>
+    </div>
+    <div class="g-grid">
+{{GALLERY}}
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="section video" id="video">
+  <div class="container video-grid">
+    <div class="video-copy reveal">
+      <p class="kicker" data-i18n="vid.kicker">{{vid.kicker}}</p>
+      <h2 data-i18n="vid.title">{{vid.title}}</h2>
+      <p data-i18n="vid.text">{{vid.text}}</p>
+      <a class="btn btn-wa" href="{{wa:wa.default}}" data-wa="wa.default" target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg><span data-i18n="hero.cta">{{hero.cta}}</span></a>
+    </div>
+    <div class="video-pair reveal">
+      <div class="video-frame">
+        <video autoplay muted loop playsinline preload="auto" aria-label="{{attr:a11y.video}}" data-i18n-aria="a11y.video">
+          <source src="../assets/video/cumbuco-1.mp4#t=0.1" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-frame">
+        <video autoplay muted loop playsinline preload="auto" aria-label="{{attr:a11y.video}}" data-i18n-aria="a11y.video">
+          <source src="../assets/video/cumbuco-2.mp4#t=0.1" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUGGY CREDENCIADO -->
+<section class="section credenc" id="credenciado">
+  <div class="container">
+    <header class="sec-head reveal">
+      <p class="kicker" data-i18n="cr.kicker">{{cr.kicker}}</p>
+      <h2 data-i18n="cr.title">{{cr.title}}</h2>
+      <p data-i18n="cr.text">{{cr.text}}</p>
+    </header>
+    <div class="cr-box reveal">
+      <h3 data-i18n="cr.how">{{cr.how}}</h3>
+      <p class="cr-lead" data-i18n="cr.how.d">{{cr.how.d}}</p>
+      <ul class="cr-grid"><li class="cr-item"><span class="cr-ico cr-red"><svg class="ico"><use href="#i-plate"/></svg></span><div><b data-i18n="cr.1.t">{{cr.1.t}}</b><p data-i18n="cr.1.d">{{cr.1.d}}</p></div></li><li class="cr-item"><span class="cr-ico cr-blue"><svg class="ico"><use href="#i-hash"/></svg></span><div><b data-i18n="cr.2.t">{{cr.2.t}}</b><p data-i18n="cr.2.d">{{cr.2.d}}</p></div></li><li class="cr-item"><span class="cr-ico cr-sun"><svg class="ico"><use href="#i-doc"/></svg></span><div><b data-i18n="cr.3.t">{{cr.3.t}}</b><p data-i18n="cr.3.d">{{cr.3.d}}</p></div></li><li class="cr-item"><span class="cr-ico cr-green"><svg class="ico"><use href="#i-shield"/></svg></span><div><b data-i18n="cr.4.t">{{cr.4.t}}</b><p data-i18n="cr.4.d">{{cr.4.d}}</p></div></li></ul>
+    </div>
+  </div>
+</section>
+<!-- AVISOS -->
+<section class="notice">
+  <div class="container notice-in reveal">
+    <h2 data-i18n="notice.title">{{notice.title}}</h2>
+    <ul>
+      <li data-i18n="notice.1">{{notice.1}}</li>
+      <li data-i18n="notice.2">{{notice.2}}</li>
+      <li data-i18n="notice.3">{{notice.3}}</li>
+    </ul>
+  </div>
+</section>
+<!-- DEPOIMENTOS -->
+<section class="section reviews" id="avaliacoes">
+  <div class="container">
+    <header class="sec-head reveal">
+      <p class="kicker" data-i18n="rev.kicker">{{rev.kicker}}</p>
+      <h2 data-i18n="rev.title">{{rev.title}}</h2>
+      <p data-i18n="rev.text">{{rev.text}}</p>
+    </header>
+    <div class="rev-score reveal">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><use href="#i-google"/></svg>
+      <strong>{{GRATING}}</strong><span class="rev-stars big" aria-hidden="true">★★★★★</span>
+      <span><b>{{GCOUNT}}</b> <span data-i18n="rev.count">{{rev.count}}</span></span>
+    </div>
+    <div class="rev-wrap">
+      <button class="rev-nav prev" type="button" aria-label="{{attr:a11y.revprev}}" data-i18n-aria="a11y.revprev">‹</button>
+      <div class="rev-track" id="revTrack">
+{{REVIEWS}}
+      </div>
+      <button class="rev-nav next" type="button" aria-label="{{attr:a11y.revnext}}" data-i18n-aria="a11y.revnext">›</button>
+    </div>
+    <p class="rev-orig" data-i18n="rev.orig">{{rev.orig}}</p>
+    <div class="rev-cta reveal">
+      <div class="g-badge" aria-hidden="true"><svg viewBox="0 0 48 48"><path fill="#4285F4" d="M45 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8a10 10 0 0 1-4.4 6.6v5.5h7.1c4.2-3.9 6.5-9.6 6.5-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7A22 22 0 0 0 24 46z"/><path fill="#FBBC05" d="M11.8 28.2a13 13 0 0 1 0-8.4v-5.7H4.5a22 22 0 0 0 0 19.8z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3A22 22 0 0 0 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></svg></div>
+      <div class="rev-cta-txt">
+        <h3 data-i18n="rev.cta.t">{{rev.cta.t}}</h3>
+        <p data-i18n="rev.cta.d">{{rev.cta.d}}</p>
+              </div>
+      <div class="rev-cta-btns">
+        <a class="btn btn-google" href="{{GURL}}" target="_blank" rel="noopener"><span data-i18n="rev.rate">{{rev.rate}}</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container foot-row">
+    <img class="f-logo" src="../assets/img/logo.jpg" alt="Passeio de Buggy Cumbuco Ceará" width="360" height="240" loading="lazy">
+    <div class="f-id"><strong class="f-brand">Cumbuco de Buggy</strong><span class="f-sub">Passeio de Buggy em Cumbuco · Ceará</span></div>
+    <p class="copy">© <span id="yr">2026</span> Cumbuco de Buggy. <span data-i18n="foot.rights">{{foot.rights}}</span> <span class="sep">·</span> <span class="dev"><span data-i18n="foot.dev">{{foot.dev}}</span> <a href="https://www.rasterdigital.com.br" target="_blank" rel="noopener">Raster Digital</a></span></p>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a class="wa-float" href="{{wa:wa.default}}" data-wa="wa.default" target="_blank" rel="noopener" aria-label="{{attr:a11y.wa}}" data-i18n-aria="a11y.wa">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa" style="color:#fff"/></svg>
+  <span class="wa-tip" data-i18n="foot.wa">{{foot.wa}}</span>
+</a>
+
+<a class="to-top" id="toTop" href="#top" aria-label="{{attr:a11y.top}}" data-i18n-aria="a11y.top"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="m6 15 6-6 6 6"/></svg></a>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" hidden>
+  <button class="lb-x" aria-label="{{attr:a11y.close}}" data-i18n-aria="a11y.close">×</button>
+  <button class="lb-p" aria-label="{{attr:a11y.prev}}" data-i18n-aria="a11y.prev">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-n" aria-label="{{attr:a11y.next}}" data-i18n-aria="a11y.next">›</button>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.6 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3l-.1-.4-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a.9.9 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.6s1.8 2.7 4.4 3.8c1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.3-.2-.5-.3z"/></symbol>
+  <symbol id="i-google" viewBox="0 0 48 48"><path fill="#4285F4" d="M45 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8a10 10 0 0 1-4.4 6.6v5.5h7.1c4.2-3.9 6.5-9.6 6.5-16.1z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7A22 22 0 0 0 24 46z"/><path fill="#FBBC05" d="M11.8 28.2a13 13 0 0 1 0-8.4v-5.7H4.5a22 22 0 0 0 0 19.8z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3A22 22 0 0 0 4.5 14.1l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3 6.6 7 .7-5.3 4.8 1.6 7L12 17.5 5.7 21l1.6-7L2 9.3l7-.7z"/></symbol>
+  <symbol id="i-plate" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2.5"/><path d="M6 10.5h5M6 13.5h3M14 10.5h4M14 13.5h4"/></g></symbol><symbol id="i-hash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3 7 21M17 3l-2 18M4 8.5h17M3 15.5h17"/></g></symbol><symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></g></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6zm-3.5 9 2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12zm-4 11-2 9 6-3 6 3-2-9"/></symbol>
+  <symbol id="i-music" viewBox="0 0 24 24"><path fill="currentColor" d="M9 18a3 3 0 1 1-2-2.8V5l12-2v12a3 3 0 1 1-2-2.8V6.4L9 7.8z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 7h3l2-3h6l2 3h3v13H4zm8 3.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18 9a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM8 17h8a3 3 0 0 0 0-6H8a3 3 0 0 1 0-6h8"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm0 4v5l3 2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm-7 10c0-4 3-6 7-6s7 2 7 6M16 3.5a4 4 0 0 1 0 7.5M22 21c0-3-1.5-5-4-5.7"/></symbol>
+</svg>
+
+<script src="../assets/js/i18n.js?v=11"></script>
+<script src="../assets/js/main.js?v=11"></script>
+</body>
+</html>

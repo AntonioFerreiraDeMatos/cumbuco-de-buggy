@@ -1,0 +1,14 @@
+# Originais brutos (pesados) — ficam só no computador
+/*.HEIC
+/*.heic
+/*.MOV
+/*.MP4
+/WhatsApp Image*
+/Logo.jpeg
+/assets/fotos-brincadeiras/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+__pycache__/
+.vscode/
