@@ -6,7 +6,7 @@ Gera: pt-br/index.html, en/index.html, es/index.html, assets/js/i18n.js, sitemap
 """
 import json, re, urllib.parse, os
 
-SITE = "https://www.buggycumbuco.com.br"   # <<< troque pelo domínio definitivo
+SITE = "https://cumbucodebuggy.online"   # <<< troque pelo domínio definitivo
 WHATSAPP = "5585997126836"                  # número oficial (wa.me)
 LANGS = {"pt": "pt-br", "en": "en", "es": "es"}
 GOOGLE_REVIEWS_URL = "https://www.google.com/search?q=Cumbuco+de+buggy&oq=Cumbuco+de+buggy&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIGCAcQRRg80gEHODgxajBqN6gCCLACAfEFQpVpy0JiQGI&sourceid=chrome&source=chrome.ob&ie=UTF-8#sv=CAESzQEKuQEStgEKd0FERGJXZVlWM2pSR1lkSVlFeUZodVNOM3BqbDZWTm90RVpwRHN2OXBWU3RVb3lEY0dHMTYyaGJLRWxpbERWblFYMGVFN21mRFJVc3QzN3JwS29mQ1dwX1lINkpfbHhNV1BfbzZmOVkwSEI2VGl0Yk5VNTFZTkdvEhdCS0w1YXRfNUpyS0Y1T1VQd0pPWGlRVRoiQUhOMEU3RnRvbUg5bDNTdjVsRzZqdDdXVFFWa0hrYnRQdxIEODA1MRoBMyoAMAA4AUAAGAAgk_Dsww1KAhAB"
